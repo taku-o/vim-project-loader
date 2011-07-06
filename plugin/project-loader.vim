@@ -1,5 +1,5 @@
 
-autocmd BufEnter .omiprojects silent! %foldopen!
+autocmd BufAdd .omiprojects silent! %foldopen!
 
 if filereadable(getcwd(). '/.omiprojects')
     Project .omiprojects
