@@ -1,9 +1,9 @@
 
-autocmd BufAdd .omiprojects silent! %foldopen!
+autocmd BufAdd .vimprojects silent! %foldopen!
 
 if getcwd() != $HOME
-    if filereadable(getcwd(). '/.omiprojects')
-        Project .omiprojects
+    if filereadable(getcwd(). '/.vimprojects')
+        Project .vimprojects
     endif
 endif
 
